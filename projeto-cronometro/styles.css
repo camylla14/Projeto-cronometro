@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+body{
+    background-color: #f1f1f1;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 14rem;  /*3rem*/
+}
+
+.container h1{
+    color: #175cff;
+}
+
+.timer{
+    display:flex;
+    font-size: 55px;
+    font-weight: bold;
+    color: #333;
+}
+
+.time{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #172953;
+    min-width: 90px;
+}
+
+.separator{
+    padding: 0 10px;
+    color: #525763;
+}
+
+#milliseconds{
+    font-size: 30px;
+    color: #525763;
+}
+
+.buttons{
+    display:flex;
+    gap: 1rem;
+}
+
+.btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+#startBtn{
+    background-color: #175cff;
+    color: #fff;
+}
+
+#pauseBtn, #resumeBtn{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+
+    .container{
+        padding-top: 280px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation:landscape){
+
+    .container{
+        padding-top: 43px;
+        padding-left: 16px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .container{
+        padding-top: 198px;
+    }
+
+}
+
+@media screen and (max-width: 280px){
+
+    .container{
+        padding-top: 193px;
+        padding-left: 15px;
+    }
+
+    .timer{
+        padding-left: 5px;
+        font-size: 2.77rem;
+    }
+
+    .time{
+        min-width: 75px;
+        margin-right: 5px;
+    }
+
+    #milliseconds{
+        font-size: 28px;
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+
+    .container{
+        padding-top: 52%;
+        padding-left: 0;
+    }
+
+    .timer{
+        font-size: 3rem;
+        padding-left: 16px;
+    }
+
+    .separator{
+        padding: 0;
+    }
+
+}
+
+
+
+
